@@ -1,0 +1,16 @@
+name: hci-scorecard-model
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.11
+  - jupyter
+  - mlflow
+  - scikit-learn
+  - pandas
+  - matplotlib
+  - ca-certificates
+  - openssl
+  - python-dotenv
+  - certifi
+prefix: D:\Scoop\apps\mambaforge\current\envs\hci-scorecard-model
