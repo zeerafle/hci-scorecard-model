@@ -61,9 +61,9 @@ for data in primary_tables + dataset_files:
         print(f"Table {table_name} created successfully")
         # insert data
         try:
-            df.to_sql(table_name, conn, if_exists='fail', index=False)
-        except ValueError as e:
-            print('Table already exists')
+            df.to_sql(table_name, conn, if_exists='replace', index=False)
+        except Exception as e:
+            print(e)
         print(f"Data inserted into {table_name} successfully")
         # commit the transaction
         conn.commit()
