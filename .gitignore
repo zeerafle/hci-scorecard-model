@@ -178,3 +178,6 @@ dataset/
 *.zip
 *.db
 *.parquet
+
+# mlflow
+mlruns/
